@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metric/Imperial unit conversion</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body onload="converter()">
+    <div class="container">
+      <div class="main">
+        <p>Metric/Imperial unit conversion</p>
+        <p id="num-el"></p>
+        <input type="button" id="numberbtn" onclick="usrInput()" value="Enter Number" />
+        <!-- <input id="Meters" type="number" placeholder="Meters" oninput="converter(this.value)" /> -->
+      </div>
+      <input type="button" id="resetbtn" value="Reset" onClick="window.location.reload(true)" />
+      <div class="results">
+        <p class="resultheader">Length (Meter/Feet)</p>
+        <p class="resultater" id="resultat-m"></p>
+        <p class="resultheader">Volume (Liters/Gallon)</p>
+        <p class="resultater" id="resultat-l"></p>
+        <p class="resultheader">Mass (Kilograms/Pounds)</p>
+        <p class="resultater" id="resultat-k"></p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
